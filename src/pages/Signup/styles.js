@@ -47,3 +47,18 @@ export const Strong = styled.strong`
     color: #676767;
   }
 `;
+
+export const LinkWithImage = styled.a`
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  position: relative;
+  margin-right: -430px;
+  margin-top: 1px;
+`;
+
+export const Image = styled.img`
+  max-width: 18%;
+  height: auto;
+`;

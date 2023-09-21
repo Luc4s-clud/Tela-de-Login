@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
+import Images from "../../components/Images"
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -36,7 +37,10 @@ const Signup = () => {
 
   return (
     <C.Container>
-      <C.Label>Controle de Horas - Uniedu</C.Label>
+      <Images />
+      <div>
+        <C.Label>Controle de Horas - Uniedu</C.Label>
+      </div>
       <C.Content>
         <Input
           type="email"
@@ -64,6 +68,15 @@ const Signup = () => {
             <Link to="/">&nbsp;Entre</Link>
           </C.Strong>
         </C.LabelSignin>
+        <C.LinkWithImage
+          href="https://bolsasuniedu.sed.sc.gov.br/wwpbaseobjects.home.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <div className="image-container">
+          <C.Image src="./uniedu1.png" alt="uniedu" />
+        </div>
+        </C.LinkWithImage>
       </C.Content>
     </C.Container>
   );

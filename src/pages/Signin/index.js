@@ -4,6 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import useAuth from "../../hooks/useAuth";
 import { Link, useNavigate } from "react-router-dom";
+import Images from "../../components/Images"
 
 const Signin = () => {
   const { signin } = useAuth();
@@ -14,7 +15,7 @@ const Signin = () => {
   const [error, setError] = useState("");
 
   const handleLogin = () => {
-    if (!email | !senha) {
+    if (!email || !senha) {
       setError("Preencha todos os campos");
       return;
     }
@@ -31,7 +32,10 @@ const Signin = () => {
 
   return (
     <C.Container>
-      <C.Label>Controle de Horas - Uniedu</C.Label>
+      <Images />
+      <div>
+        <C.Label>Controle de Horas - Uniedu</C.Label>
+      </div>
       <C.Content>
         <Input
           type="email"
@@ -53,6 +57,15 @@ const Signin = () => {
             <Link to="/signup">&nbsp;Registre-se</Link>
           </C.Strong>
         </C.LabelSignup>
+        <C.LinkWithImage
+          href="https://bolsasuniedu.sed.sc.gov.br/wwpbaseobjects.home.aspx"
+          target="_blank"
+          rel="noopener noreferrer"
+        >
+        <div className="image-container">
+          <C.Image src="./uniedu1.png" alt="uniedu" />
+        </div>
+        </C.LinkWithImage>
       </C.Content>
     </C.Container>
   );
