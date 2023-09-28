@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import { Link, useNavigate } from "react-router-dom";
 import useAuth from "../../hooks/useAuth";
-import Images from "../../components/Images"
+import logo from "C:/Users/User/Documents/Teste-React/login/src/components/bolsadeestudo.png";
 
 const Signup = () => {
   const [email, setEmail] = useState("");
@@ -37,7 +37,9 @@ const Signup = () => {
 
   return (
     <C.Container>
-      <Images />
+      <div className="logo-container">
+          <C.Logo src={logo} alt="logo2" />
+        </div>
       <div>
         <C.Label>Controle de Horas - Uniedu</C.Label>
       </div>

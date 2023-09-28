@@ -64,3 +64,13 @@ export const Image = styled.img`
   max-width: 18%;
   height: auto;
 `;
+
+export const Logo = styled.img`
+  height: 40vmin;
+  pointer-events: none;
+  margin-right: 45px;
+  
+  img {
+    width: 70%;
+  }
+`;
