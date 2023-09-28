@@ -37,13 +37,13 @@ const Signup = () => {
 
   return (
     <C.Container>
-      <div className="logo-container">
-          <C.Logo src={logo} alt="logo2" />
-        </div>
+      <C.Content>
+        <div className="logo-container">
+            <C.Logo src={logo} alt="logo2" />
+          </div>
       <div>
         <C.Label>Controle de Horas - Uniedu</C.Label>
       </div>
-      <C.Content>
         <Input
           type="email"
           placeholder="Digite seu E-mail"

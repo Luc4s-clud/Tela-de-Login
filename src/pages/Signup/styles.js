@@ -64,9 +64,9 @@ export const Image = styled.img`
 `;
 
 export const Logo = styled.img`
-  height: 34vmin;
+  height: 30vmin;
   pointer-events: none;
-  margin-right: 45px;
+  margin-right: 35px;
   
   img {
     width: 70%;
