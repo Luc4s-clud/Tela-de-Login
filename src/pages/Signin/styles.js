@@ -16,7 +16,7 @@ export const Content = styled.div`
   justify-content: center;
   flex-direction: column;
   width: 100%;
-  box-shadow: 0 1px 2px #0003;
+  box-shadow: #cccccc 0px 0px 5px;
   background-color: white;
   max-width: 350px;
   padding: 20px;
@@ -66,7 +66,7 @@ export const Image = styled.img`
 `;
 
 export const Logo = styled.img`
-  height: 35vmin;
+  height: 30vmin;
   pointer-events: none;
   margin-right: 35px;
   
