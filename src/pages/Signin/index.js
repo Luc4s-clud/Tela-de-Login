@@ -4,7 +4,7 @@ import Button from "../../components/Button";
 import * as C from "./styles";
 import useAuth from "../../hooks/useAuth";
 import { Link, useNavigate } from "react-router-dom";
-import logo from "C:/Users/User/Documents/Teste-React/login/src/components/bolsadeestudo.png";
+import logo from "../../components/bolsadeestudo.png";
 
 const Signin = () => {
   const { signin } = useAuth();
